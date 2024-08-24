@@ -1,5 +1,7 @@
 ## Microsoft Learn Location Mention Recognition Challenge
+The objective of this challenge is to encourage the development of systems for Location Mention Recognition (LMR) from microblogging posts during emergencies.
 
+## DF
 We have 19 events. Detailed statistics and the dataset are available at: [IDRISI Repository](https://github.com/rsuwaileh/IDRISI/tree/main/LMR).
 
 The data for every event has been split into training, development, and test sets. These are available in the GitHub repository.
