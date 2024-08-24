@@ -1,1 +1,6 @@
 .DS_Store
+approach_3/cache_dir
+approach_3/outputs
+/approach_3/runs
+utils/__pycache__/io.cpython-311.pyc
+utils/__pycache__/preprocessing.cpython-311.pyc

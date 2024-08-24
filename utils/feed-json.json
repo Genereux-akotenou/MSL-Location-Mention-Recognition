@@ -1,0 +1,140 @@
+{
+    "sha": "f3a1e7653d46da87634ad6fcef36ccc9c4e97f53",
+    "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/f3a1e7653d46da87634ad6fcef36ccc9c4e97f53",
+    "tree": [
+      {
+        "path": "california_wildfires_2018",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f1b8d9b2f9890ccb3b160e991bb756e2b95946ad",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/f1b8d9b2f9890ccb3b160e991bb756e2b95946ad"
+      },
+      {
+        "path": "canada_wildfires_2016",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f22abcb5a235a00760fb01eb09606a3629e92778",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/f22abcb5a235a00760fb01eb09606a3629e92778"
+      },
+      {
+        "path": "cyclone_idai_2019",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fdec454c9430245530c8988b09547e8d36c63e2e",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/fdec454c9430245530c8988b09547e8d36c63e2e"
+      },
+      {
+        "path": "ecuador_earthquake_2016",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "db4d1b91c3369bfbe2475ab471fbf4b071af57be",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/db4d1b91c3369bfbe2475ab471fbf4b071af57be"
+      },
+      {
+        "path": "greece_wildfires_2018",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b76785305f4b29ce7b50b65d16f6ec5b84ae04b0",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/b76785305f4b29ce7b50b65d16f6ec5b84ae04b0"
+      },
+      {
+        "path": "hurricane_dorian_2019",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4edc408852b5ee1360ddc0e09f26927c83140dab",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/4edc408852b5ee1360ddc0e09f26927c83140dab"
+      },
+      {
+        "path": "hurricane_florence_2018",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ab18a74b813302cdd3b92789c97af3a015d0c10f",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/ab18a74b813302cdd3b92789c97af3a015d0c10f"
+      },
+      {
+        "path": "hurricane_harvey_2017",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cdb14bd989865f91e47a499c33030c163ffef0ff",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/cdb14bd989865f91e47a499c33030c163ffef0ff"
+      },
+      {
+        "path": "hurricane_irma_2017",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1ef4863eac5dbda41cc8a42191698e78db185152",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/1ef4863eac5dbda41cc8a42191698e78db185152"
+      },
+      {
+        "path": "hurricane_maria_2017",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3c84c3be0187f85e05e93225fe716391b28c1cdf",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/3c84c3be0187f85e05e93225fe716391b28c1cdf"
+      },
+      {
+        "path": "hurricane_matthew_2016",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c50e25a5f000f68e1ef9baadd920f359bf8787ce",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/c50e25a5f000f68e1ef9baadd920f359bf8787ce"
+      },
+      {
+        "path": "italy_earthquake_aug_2016",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0637b46e857c358101f712ff34958282749245af",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/0637b46e857c358101f712ff34958282749245af"
+      },
+      {
+        "path": "kaikoura_earthquake_2016",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "58d62e51fde773c33a4c40f8af1d30afc9c780df",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/58d62e51fde773c33a4c40f8af1d30afc9c780df"
+      },
+      {
+        "path": "kerala_floods_2018",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "830025e56c92ab9776afb53bbc3bd3bdd2cf2125",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/830025e56c92ab9776afb53bbc3bd3bdd2cf2125"
+      },
+      {
+        "path": "maryland_floods_2018",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f03bbb8472a317a86938ae254c45a0c0dcf44249",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/f03bbb8472a317a86938ae254c45a0c0dcf44249"
+      },
+      {
+        "path": "midwestern_us_floods_2019",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9494a06459654d3ebde967d97da8c79b9e99b2ab",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/9494a06459654d3ebde967d97da8c79b9e99b2ab"
+      },
+      {
+        "path": "pakistan_earthquake_2019",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "065b2888c41d3be5fe3ddcbc3247869ba002830f",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/065b2888c41d3be5fe3ddcbc3247869ba002830f"
+      },
+      {
+        "path": "puebla_mexico_earthquake_2017",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f050da53ab230abd0b6f799f39de7dd1753fb56b",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/f050da53ab230abd0b6f799f39de7dd1753fb56b"
+      },
+      {
+        "path": "srilanka_floods_2017",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "198381b06d63de0930cf53217f5451742ec0c670",
+        "url": "https://api.github.com/repos/rsuwaileh/IDRISI/git/trees/198381b06d63de0930cf53217f5451742ec0c670"
+      }
+    ],
+    "truncated": false
+  }
