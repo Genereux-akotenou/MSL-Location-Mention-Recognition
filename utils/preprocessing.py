@@ -82,11 +82,19 @@ class Preprocess:
                 return cleaned_text
             return value
 
-        df.loc[:, new_col] = df[column_name].progress_apply(process_text)
-        df.to_csv(save_in, index=False)
-        return df
+        df2 = df.copy()
+        df2.loc[:, new_col] = df[column_name].progress_apply(process_text)
+        df2.to_csv(save_in, index=False)
+        return df2
 
     def build_bilou_encoding(df, text_col="text", save_in="../data/transformed/train.tag.csv"):
+        """
+        B-<type>: Beginning of an entity.
+        I-<type>: Inside an entity.
+        L-<type>: Last token of an entity.
+        U-<type>: Unit entity (a single token entity).
+        O: Outside any entity.
+        """
         bilou_data = []
         for _, row in df.iterrows():
             tweet_id = row['tweet_id']
@@ -99,55 +107,45 @@ class Preprocess:
             else:
                 locations = []
 
-            loc_dict = {loc[0].strip(): loc[1].strip().split(' ')[0] for loc in locations}
+            # loc_dict = {loc[0].strip().lower(): loc[1].strip().split(' ')[0] for loc in locations}
+            loc_dict = {}
+            for loc in locations:
+                loc_name = loc[0].strip().lower()
+                loc_type = loc[1].strip().split(' ')[0]
+                loc_tokens = re.findall(r'\b\w+\b', loc_name)
+                for token in loc_tokens:
+                    loc_dict[token] = loc_type
+
             tokens = re.findall(r'\b\w+\b', text)
             tags = ['O'] * len(tokens)
-
-            # Assign BILOU tags based on location mentions
             i = 0
             while i < len(tokens):
-                token = tokens[i]
+                token = tokens[i].lower()
                 if token in loc_dict:
                     tag_type = loc_dict[token]
-                    if i == 0 or tokens[i - 1] not in loc_dict:
+
+                    # If the token is the first or not preceded by the same entity, or the next token is of a different type
+                    if (i == 0 or tokens[i - 1] not in loc_dict or loc_dict[tokens[i - 1]] != tag_type) and \
+                    (i == len(tokens) - 1 or tokens[i + 1] not in loc_dict or loc_dict[tokens[i + 1]] != tag_type):
                         tags[i] = 'U-' + tag_type  # Unit entity
                     else:
-                        # Check if it's the last token of an entity
-                        if i == len(tokens) - 1 or tokens[i + 1] not in loc_dict:
-                            tags[i] = 'L-' + tag_type  # Last token of an entity
-                        else:
-                            tags[i] = 'B-' + tag_type  # Beginning of an entity
-                            # Tag all following tokens that are the same entity as Inside
-                            while i < len(tokens) and tokens[i] == token:
-                                tags[i] = 'I-' + tag_type
-                                i += 1
-                            continue
+                        # Beginning of a multi-token entity
+                        if i == 0 or tokens[i - 1] not in loc_dict or loc_dict[tokens[i - 1]] != tag_type:
+                            tags[i] = 'B-' + tag_type
+                        # Inside a multi-token entity
+                        elif i < len(tokens) - 1 and tokens[i + 1] in loc_dict and loc_dict[tokens[i + 1]] == tag_type:
+                            tags[i] = 'I-' + tag_type
+                        # Last token of a multi-token entity
+                        elif i == len(tokens) - 1 or tokens[i + 1] not in loc_dict or loc_dict[tokens[i + 1]] != tag_type:
+                            tags[i] = 'L-' + tag_type
                 i += 1
 
             for token, tag in zip(tokens, tags):
                 bilou_data.append({'sentence_id': tweet_id, 'words': token, 'labels': tag})
 
         bilou_df = pd.DataFrame(bilou_data)
-        df.to_csv(save_in, index=False)
+        bilou_df.to_csv(save_in, index=False)
         return bilou_df
-
-
-
-
-
-
-
-
-
-    @staticmethod
-    def remove_stop_words_(text):
-        stanza.download('en', verbose=False)
-        nlp = stanza.Pipeline('en', tokenize_pretokenized=True, verbose=False)
-        stop_words = set(stopwords.words('english'))
-        doc = nlp(text)
-        filtered_words = [word.text for sent in doc.sentences for word in sent.words if word.text.lower() not in stop_words]
-        return ' '.join(filtered_words)
-
     
     @staticmethod
     def generate_bio_tags(text, location):
@@ -172,7 +170,6 @@ class Preprocess:
         
         return tokens, tags
     
-    
     @staticmethod
     def treat_hashtags(text):
         """If hashtag is all uppercase, leave it as is, else split into words(CamelCase)"""
@@ -184,15 +181,6 @@ class Preprocess:
                 return re.sub(r'(?<!^)(?=[A-Z])', ' ', hashtag)
 
         return re.sub(r'#\w+', replace_hashtag, text)
-    
-    # @staticmethod
-    # def remove_stop_words(text):
-    #     stanza.download('en', verbose=False)
-    #     nlp = stanza.Pipeline('en', tokenize_pretokenized=True, verbose=False)
-    #     stop_words = set(stopwords.words('english'))
-    #     doc = nlp(text)
-    #     filtered_words = [word.text for sent in doc.sentences for word in sent.words if word.text.lower() not in stop_words]
-    #     return ' '.join(filtered_words)
     
     @staticmethod
     def correct_spelling(text):

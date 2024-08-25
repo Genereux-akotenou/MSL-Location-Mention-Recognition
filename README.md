@@ -15,3 +15,9 @@ In the [IDRISI GitHub repository](https://github.com/rsuwaileh/IDRISI):
 - **Dataset:** IDRISI-RE in JSON format.
 - **Baselines:** BERT-LMR and CRF-LMR baselines are available.
 - The datasets have also been provided as CSV files if you would prefer to use CSV files. The choice is yours.
+
+## Setup
+sh```
+conda env create -f base.local.yml 
+conda activate lmr_env
+```
