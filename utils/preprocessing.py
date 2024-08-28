@@ -148,6 +148,98 @@ class Preprocess:
         return bilou_df
     
     @staticmethod
+    def build_bio_encoding(df, text_col="text", save_in="../data/transformed/train.tag.csv"):
+        """
+        B-<type>: Beginning of an entity.
+        I-<type>: Inside an entity.
+        O: Outside any entity.
+        """
+        bio_data = []
+        for _, row in df.iterrows():
+            tweet_id = row['tweet_id']
+            text = row[text_col]
+            location_mentions = row['location_mentions']
+
+            # Split location mentions
+            if pd.notna(location_mentions):
+                locations = [loc.split('=>') for loc in location_mentions.split(' * ')]
+            else:
+                locations = []
+
+            # Create a dictionary of location mentions
+            loc_dict = {}
+            for loc in locations:
+                loc_name = loc[0].strip().lower()
+                loc_type = loc[1].strip().split(' ')[0]
+                loc_tokens = re.findall(r'\b\w+\b', loc_name)
+                for token in loc_tokens:
+                    loc_dict[token] = loc_type
+
+            tokens = re.findall(r'\b\w+\b', text)
+            tags = ['O'] * len(tokens)
+            i = 0
+            while i < len(tokens):
+                token = tokens[i].lower()
+                if token in loc_dict:
+                    tag_type = loc_dict[token]
+
+                    # Beginning of a multi-token entity
+                    if i == 0 or tokens[i - 1] not in loc_dict or loc_dict[tokens[i - 1]] != tag_type:
+                        tags[i] = 'B-' + tag_type
+                    else:
+                        # Inside a multi-token entity
+                        tags[i] = 'I-' + tag_type
+                i += 1
+
+            for token, tag in zip(tokens, tags):
+                bio_data.append({'sentence_id': tweet_id, 'words': token, 'labels': tag})
+
+        bio_df = pd.DataFrame(bio_data)
+        bio_df.to_csv(save_in, index=False)
+        return bio_df
+    
+    @staticmethod
+    def build_io_encoding(df, text_col="text", save_in="../data/transformed/train.tag.csv"):
+        """
+        I-<type>: Inside an entity.
+        O: Outside any entity.
+        """
+        io_data = []
+        for _, row in df.iterrows():
+            tweet_id = row['tweet_id']
+            text = row[text_col]
+            location_mentions = row['location_mentions']
+
+            # Split location mentions
+            if pd.notna(location_mentions):
+                locations = [loc.split('=>') for loc in location_mentions.split(' * ')]
+            else:
+                locations = []
+
+            # Create a dictionary of location mentions
+            loc_dict = {}
+            for loc in locations:
+                loc_name = loc[0].strip().lower()
+                loc_type = loc[1].strip().split(' ')[0]
+                loc_tokens = re.findall(r'\b\w+\b', loc_name)
+                for token in loc_tokens:
+                    loc_dict[token] = loc_type
+
+            tokens = re.findall(r'\b\w+\b', text)
+            tags = ['O'] * len(tokens)
+            for i, token in enumerate(tokens):
+                token_lower = token.lower()
+                if token_lower in loc_dict:
+                    tags[i] = 'I-' + loc_dict[token_lower]
+
+            for token, tag in zip(tokens, tags):
+                io_data.append({'sentence_id': tweet_id, 'words': token, 'labels': tag})
+
+        io_df = pd.DataFrame(io_data)
+        io_df.to_csv(save_in, index=False)
+        return io_df
+    
+    @staticmethod
     def generate_bio_tags(text, location):
         nlp = stanza.Pipeline(lang='en', processors='tokenize', verbose=False)
         doc = nlp(text)

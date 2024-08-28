@@ -5,3 +5,4 @@ approach_3/outputs
 utils/__pycache__/io.cpython-311.pyc
 utils/__pycache__/preprocessing.cpython-311.pyc
 .env
+/approach_3/wandb

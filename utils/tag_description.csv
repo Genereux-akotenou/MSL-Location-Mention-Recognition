@@ -1,0 +1,12 @@
+original_type,xml_tag
+State,STATE
+County,COUNTY
+City/town,CITY
+Road/street,ROAD
+Island,ISLAND
+Human-made Point-of-Interest,HUMAN-MADE-POINT-OF-INTEREST
+Continent,CONTINENT
+Neighborhood,NEIGHBORHOOD
+Natural Point-of-Interest,NATURAL-POINT-OF-INTEREST
+District,DISTRICT
+Country,COUNTRY
