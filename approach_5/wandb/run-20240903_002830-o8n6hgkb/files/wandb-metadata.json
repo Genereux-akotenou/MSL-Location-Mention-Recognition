@@ -1,0 +1,36 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.11.8",
+    "heartbeatAt": "2024-09-02T23:28:31.663607",
+    "startedAt": "2024-09-02T23:28:30.708835",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "fine-tunne--t5-google.ipynb",
+    "codePathLocal": "fine-tunne--t5-google.ipynb",
+    "git": {
+        "remote": "https://github.com/Genereux-akotenou/MSL-Location-Mention-Recognition.git",
+        "commit": "b18df9c8fee2da8816647f2946ff84386c8d6b2b"
+    },
+    "email": "genereux.akotenou@gmail.com",
+    "root": "/Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition",
+    "host": "MacBook-Pro-de-Genereux.local",
+    "username": "genereux",
+    "executable": "/opt/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 421.4784278869629
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

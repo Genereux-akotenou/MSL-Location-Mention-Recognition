@@ -1,0 +1,14 @@
+2024-09-03 00:21:59,235 INFO    StreamThr :90436 [internal.py:wandb_internal():85] W&B internal server running at pid: 90436, started at: 2024-09-03 00:21:59.234753
+2024-09-03 00:21:59,235 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status
+2024-09-03 00:21:59,238 INFO    WriterThread:90436 [datastore.py:open_for_write():87] open: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240903_002159-evjiwiez/run-evjiwiez.wandb
+2024-09-03 00:21:59,239 DEBUG   SenderThread:90436 [sender.py:send():391] send: header
+2024-09-03 00:21:59,275 DEBUG   SenderThread:90436 [sender.py:send():391] send: run
+2024-09-03 00:21:59,690 INFO    SenderThread:90436 [dir_watcher.py:__init__():211] watching files in: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240903_002159-evjiwiez/files
+2024-09-03 00:21:59,690 INFO    SenderThread:90436 [sender.py:_start_run_threads():1200] run started: evjiwiez with start time 1725319319.234592
+2024-09-03 00:22:00,835 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:01,042 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:03,793 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:04,297 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-03 00:22:04,708 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:05,852 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:06,062 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report

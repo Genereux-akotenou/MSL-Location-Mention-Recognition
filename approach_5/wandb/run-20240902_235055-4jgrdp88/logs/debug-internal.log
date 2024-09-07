@@ -1,0 +1,130 @@
+2024-09-02 23:51:31,960 INFO    StreamThr :66049 [internal.py:wandb_internal():85] W&B internal server running at pid: 66049, started at: 2024-09-02 23:51:31.958644
+2024-09-02 23:51:31,961 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status
+2024-09-02 23:51:31,979 INFO    WriterThread:66049 [datastore.py:open_for_write():87] open: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/run-4jgrdp88.wandb
+2024-09-02 23:51:31,980 DEBUG   SenderThread:66049 [sender.py:send():391] send: header
+2024-09-02 23:51:32,035 DEBUG   SenderThread:66049 [sender.py:send():391] send: run
+2024-09-02 23:51:32,451 INFO    SenderThread:66049 [dir_watcher.py:__init__():211] watching files in: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files
+2024-09-02 23:51:32,451 INFO    SenderThread:66049 [sender.py:_start_run_threads():1200] run started: 4jgrdp88 with start time 1725317491.958805
+2024-09-02 23:51:32,466 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: check_version
+2024-09-02 23:51:32,466 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: check_version
+2024-09-02 23:51:32,725 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: run_start
+2024-09-02 23:51:32,732 DEBUG   HandlerThread:66049 [system_info.py:__init__():26] System info init
+2024-09-02 23:51:32,732 DEBUG   HandlerThread:66049 [system_info.py:__init__():41] System info init done
+2024-09-02 23:51:32,732 INFO    HandlerThread:66049 [system_monitor.py:start():194] Starting system monitor
+2024-09-02 23:51:32,733 INFO    SystemMonitor:66049 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-02 23:51:32,733 INFO    HandlerThread:66049 [system_monitor.py:probe():214] Collecting system info
+2024-09-02 23:51:32,733 INFO    SystemMonitor:66049 [interfaces.py:start():188] Started cpu monitoring
+2024-09-02 23:51:32,733 INFO    SystemMonitor:66049 [interfaces.py:start():188] Started disk monitoring
+2024-09-02 23:51:32,739 INFO    SystemMonitor:66049 [interfaces.py:start():188] Started gpuapple monitoring
+2024-09-02 23:51:32,743 INFO    SystemMonitor:66049 [interfaces.py:start():188] Started memory monitoring
+2024-09-02 23:51:32,745 INFO    SystemMonitor:66049 [interfaces.py:start():188] Started network monitoring
+2024-09-02 23:51:33,035 DEBUG   HandlerThread:66049 [system_info.py:probe():152] Probing system
+2024-09-02 23:51:33,036 DEBUG   HandlerThread:66049 [system_info.py:_probe_git():137] Probing git
+2024-09-02 23:51:33,060 DEBUG   HandlerThread:66049 [system_info.py:_probe_git():145] Probing git done
+2024-09-02 23:51:33,060 DEBUG   HandlerThread:66049 [system_info.py:probe():200] Probing system done
+2024-09-02 23:51:33,060 DEBUG   HandlerThread:66049 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.11.8', 'heartbeatAt': '2024-09-02T22:51:33.035861', 'startedAt': '2024-09-02T22:50:55.094686', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'fine-tunne--t5-google.ipynb', 'codePathLocal': 'fine-tunne--t5-google.ipynb', 'git': {'remote': 'https://github.com/Genereux-akotenou/MSL-Location-Mention-Recognition.git', 'commit': 'b18df9c8fee2da8816647f2946ff84386c8d6b2b'}, 'email': 'genereux.akotenou@gmail.com', 'root': '/Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition', 'host': 'MacBook-Pro-de-Genereux.local', 'username': 'genereux', 'executable': '/opt/anaconda3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 428.1790885925293}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-09-02 23:51:33,061 INFO    HandlerThread:66049 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-02 23:51:33,061 INFO    HandlerThread:66049 [system_monitor.py:probe():227] Publishing system info
+2024-09-02 23:51:33,061 DEBUG   HandlerThread:66049 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-02 23:51:33,456 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/conda-environment.yaml
+2024-09-02 23:51:40,491 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/conda-environment.yaml
+2024-09-02 23:51:40,723 DEBUG   HandlerThread:66049 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-02 23:51:40,724 INFO    HandlerThread:66049 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-02 23:51:40,724 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:51:40,724 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-02 23:51:40,724 DEBUG   SenderThread:66049 [sender.py:send():391] send: files
+2024-09-02 23:51:40,724 INFO    SenderThread:66049 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-02 23:51:40,974 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-02 23:51:40,974 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: python_packages
+2024-09-02 23:51:40,975 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 23:51:40,975 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:40,975 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 23:51:41,255 DEBUG   SenderThread:66049 [sender.py:send():391] send: telemetry
+2024-09-02 23:51:41,255 DEBUG   SenderThread:66049 [sender.py:send():391] send: config
+2024-09-02 23:51:41,348 INFO    wandb-upload_0:66049 [upload_job.py:push():130] Uploaded file /var/folders/w8/b_cflrn97k9c15rcrn5t8mmr0000gn/T/tmpscegj8f0wandb/k9kwldun-wandb-metadata.json
+2024-09-02 23:51:41,496 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/wandb-metadata.json
+2024-09-02 23:51:41,496 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/requirements.txt
+2024-09-02 23:51:42,029 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:42,502 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:51:42,780 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:51:43,028 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:44,009 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:44,509 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:51:45,041 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:46,028 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:46,520 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:51:47,046 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:48,057 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:48,320 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:51:48,530 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:51:49,083 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:50,076 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:50,539 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:51:51,447 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:51,527 DEBUG   SenderThread:66049 [sender.py:send():391] send: config
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: telemetry
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: metric
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: telemetry
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: metric
+2024-09-02 23:51:51,528 WARNING SenderThread:66049 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: telemetry
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: telemetry
+2024-09-02 23:51:51,528 DEBUG   SenderThread:66049 [sender.py:send():391] send: config
+2024-09-02 23:51:52,450 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:52,537 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: log_artifact
+2024-09-02 23:51:52,538 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: log_artifact
+2024-09-02 23:51:52,549 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:51:53,453 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:53,499 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: log_artifact
+2024-09-02 23:51:53,608 INFO    wandb-upload_1:66049 [upload_job.py:push():88] Uploaded file /var/folders/w8/b_cflrn97k9c15rcrn5t8mmr0000gn/T/tmp595u7p38/adapter_config.json
+2024-09-02 23:51:53,734 INFO    wandb-upload_0:66049 [upload_job.py:push():88] Uploaded file /var/folders/w8/b_cflrn97k9c15rcrn5t8mmr0000gn/T/tmp595u7p38/README.md
+2024-09-02 23:51:54,338 INFO    wandb-upload_3:66049 [upload_job.py:push():88] Uploaded file /var/folders/w8/b_cflrn97k9c15rcrn5t8mmr0000gn/T/tmp595u7p38/model_architecture.txt
+2024-09-02 23:51:54,453 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:55,458 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:55,980 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 23:51:56,459 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:57,464 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:58,466 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:59,468 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:51:59,745 INFO    wandb-upload_2:66049 [upload_job.py:push():88] Uploaded file /var/folders/w8/b_cflrn97k9c15rcrn5t8mmr0000gn/T/tmp595u7p38/adapter_model.safetensors
+2024-09-02 23:52:00,470 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:00,667 INFO    SenderThread:66049 [sender.py:send_request_log_artifact():1537] logged artifact model-4jgrdp88 - {'id': 'QXJ0aWZhY3Q6MTE3NzMyOTY4MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxOTU1NzI4NQ==', 'latestArtifact': None}}
+2024-09-02 23:52:00,667 DEBUG   SenderThread:66049 [sender.py:send():391] send: config
+2024-09-02 23:52:00,668 DEBUG   SenderThread:66049 [sender.py:send():391] send: metric
+2024-09-02 23:52:00,668 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:52:00,668 DEBUG   SenderThread:66049 [sender.py:send():391] send: metric
+2024-09-02 23:52:00,668 WARNING SenderThread:66049 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-09-02 23:52:00,668 DEBUG   SenderThread:66049 [sender.py:send():391] send: config
+2024-09-02 23:52:00,668 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: log_artifact
+2024-09-02 23:52:00,848 INFO    SenderThread:66049 [sender.py:send_request_log_artifact():1537] logged artifact model-4jgrdp88 - {'id': 'QXJ0aWZhY3Q6MTE3NzMyOTY4MQ==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxOTU1NzI4NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3NzMyOTY4MQ==', 'versionIndex': 0}}}
+2024-09-02 23:52:00,849 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 23:52:01,474 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:02,476 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:02,588 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:03,477 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:04,479 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:04,598 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:05,481 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:05,691 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:52:06,482 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:06,601 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:06,601 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/config.yaml
+2024-09-02 23:52:07,489 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:08,489 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:08,610 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:09,490 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:10,494 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:10,618 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:10,985 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 23:52:10,985 DEBUG   SenderThread:66049 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 23:52:11,299 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:52:11,495 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:12,496 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:13,501 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:14,506 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:14,632 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:15,554 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:16,343 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 23:52:16,517 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 23:52:16,639 INFO    Thread-77 :66049 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_235055-4jgrdp88/files/output.log
+2024-09-02 23:52:17,522 DEBUG   HandlerThread:66049 [handler.py:handle_request():158] handle_request: internal_messages

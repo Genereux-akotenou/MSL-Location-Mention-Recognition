@@ -1,0 +1,63 @@
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Current SDK version is 0.17.7
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Configure stats pid to 66021
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Loading settings from /Users/genereux/.config/wandb/settings
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Loading settings from /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/settings
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'fine-tunne--t5-google.ipynb'}
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_init.py:_log_setup():524] Logging user logs to /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_181159-ngfpze86/logs/debug.log
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_181159-ngfpze86/logs/debug-internal.log
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_init.py:init():607] calling init triggers
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {}
+2024-09-02 18:11:59,625 INFO    MainThread:66021 [wandb_init.py:init():632] re-initializing run, found existing run on stack: nh9mhwce
+2024-09-02 18:11:59,626 INFO    MainThread:66021 [wandb_run.py:_finish():2154] finishing run genereux-akotenou-local/T5-GOOGLE-MPS-TRAIN/nh9mhwce
+2024-09-02 18:11:59,709 INFO    MainThread:66021 [jupyter.py:save_history():444] not saving jupyter history
+2024-09-02 18:11:59,710 INFO    MainThread:66021 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-09-02 18:11:59,710 INFO    MainThread:66021 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2024-09-02 18:11:59,710 INFO    MainThread:66021 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2024-09-02 18:11:59,710 INFO    MainThread:66021 [wandb_run.py:_restore():2400] restore
+2024-09-02 18:11:59,710 INFO    MainThread:66021 [wandb_run.py:_restore():2406] restore done
+2024-09-02 18:12:08,698 INFO    MainThread:66021 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-09-02 18:12:08,698 INFO    MainThread:66021 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-09-02 18:12:08,705 INFO    MainThread:66021 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-09-02 18:12:08,907 INFO    MainThread:66021 [wandb_init.py:init():657] starting backend
+2024-09-02 18:12:08,907 INFO    MainThread:66021 [wandb_init.py:init():661] setting up manager
+2024-09-02 18:12:08,910 INFO    MainThread:66021 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-02 18:12:08,911 INFO    MainThread:66021 [wandb_init.py:init():669] backend started and connected
+2024-09-02 18:12:08,921 INFO    MainThread:66021 [wandb_run.py:_label_probe_notebook():1338] probe notebook
+2024-09-02 18:12:08,922 INFO    MainThread:66021 [wandb_init.py:init():764] updated telemetry
+2024-09-02 18:12:08,981 INFO    MainThread:66021 [wandb_init.py:init():797] communicating run to backend with 90.0 second timeout
+2024-09-02 18:12:10,130 INFO    MainThread:66021 [wandb_run.py:_on_init():2479] communicating current version
+2024-09-02 18:12:10,327 INFO    MainThread:66021 [wandb_run.py:_on_init():2488] got version response upgrade_message: "wandb version 0.17.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-09-02 18:12:10,327 INFO    MainThread:66021 [wandb_init.py:init():848] starting run threads in backend
+2024-09-02 18:12:18,130 INFO    MainThread:66021 [wandb_run.py:_console_start():2457] atexit reg
+2024-09-02 18:12:18,130 INFO    MainThread:66021 [wandb_run.py:_redirect():2303] redirect: wrap_raw
+2024-09-02 18:12:18,130 INFO    MainThread:66021 [wandb_run.py:_redirect():2368] Wrapping output streams.
+2024-09-02 18:12:18,130 INFO    MainThread:66021 [wandb_run.py:_redirect():2393] Redirects installed.
+2024-09-02 18:12:18,131 INFO    MainThread:66021 [wandb_init.py:init():891] run started, returning control to user process
+2024-09-02 18:12:18,131 INFO    MainThread:66021 [wandb_run.py:_config_callback():1386] config_cb None None {'max_seq_length': 3135, 'output_dir': 'T5-Output'}
+2024-09-02 18:15:07,162 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Current SDK version is 0.17.7
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Configure stats pid to 66021
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Loading settings from /Users/genereux/.config/wandb/settings
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Loading settings from /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/settings
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'fine-tunne--t5-google.ipynb'}
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_init.py:_log_setup():524] Logging user logs to /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_181507-h8ed7aq1/logs/debug.log
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240902_181507-h8ed7aq1/logs/debug-internal.log
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x38750e890>
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_init.py:init():607] calling init triggers
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {}
+2024-09-02 18:15:07,163 INFO    MainThread:66021 [wandb_init.py:init():632] re-initializing run, found existing run on stack: ngfpze86
+2024-09-02 18:15:07,164 INFO    MainThread:66021 [wandb_run.py:_finish():2154] finishing run genereux-akotenou-local/T5-GOOGLE-MPS-TRAIN/ngfpze86
+2024-09-02 18:15:07,164 INFO    MainThread:66021 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2024-09-02 18:15:07,164 INFO    MainThread:66021 [wandb_run.py:_restore():2400] restore
+2024-09-02 18:15:07,165 INFO    MainThread:66021 [wandb_run.py:_restore():2406] restore done
+2024-09-02 18:15:11,178 INFO    MainThread:66021 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-09-02 18:15:11,178 INFO    MainThread:66021 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-09-02 18:15:11,184 INFO    MainThread:66021 [wandb_run.py:_footer_sync_info():4035] logging synced files

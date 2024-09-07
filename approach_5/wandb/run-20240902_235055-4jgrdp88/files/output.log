@@ -1,0 +1,19 @@
+
+python(90236) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90242) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90247) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90252) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90258) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+You are adding a <class 'transformers.integrations.integration_utils.WandbCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+WandbCallback
+python(90264) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90270) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90280) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90288) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90299) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90305) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90314) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90320) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90329) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(90336) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.

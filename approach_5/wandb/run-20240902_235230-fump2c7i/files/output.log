@@ -1,0 +1,4 @@
+TRAIN SHAPE:  (14392, 3)
+TEST  SHAPE:  (4066, 3)
+DEV   SHAPE:  (2056, 3)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.

@@ -7,6 +7,43 @@ tqdm.pandas()
 
 class Preprocess:
     @staticmethod
+    def remove_prefix(df, df_type="train", text_column='text', location_column='location'):
+        if df_type == "train":
+            pattern = r"^[^:]*:"
+            def clean_text(row):
+                text = str(row[text_column])
+                location_words = set(str(row[location_column]).split())
+
+                match = re.match(pattern, text)
+                if match:
+                    prefix = match.group(0)
+                    prefix_words = set(prefix.split())
+                    if not location_words & prefix_words:
+                        text = re.sub(pattern, "", text).strip()
+                return text
+
+            df[text_column] = df.apply(clean_text, axis=1)
+            return df
+        else:
+            pattern = r"^[^:]*:"
+            def clean_text(text):
+                match = re.match(pattern, text)
+                if match:
+                    prefix = match.group(0)
+                    prefix_words = prefix.split()
+                    if len(prefix_words) < 3:
+                        text = re.sub(pattern, "", text).strip()
+                return text
+            df[text_column] = df[text_column].apply(lambda x: clean_text(str(x)))
+            return df
+    
+    @staticmethod
+    def reformat_useless_char(df, column_name='text'):
+        characters_to_remove = r"[()\[\]{},;#\"]"
+        df[column_name] = df[column_name].apply(lambda x: re.sub(characters_to_remove, "", str(x)))
+        return df
+    
+    @staticmethod
     def remove_non_ascii(df, column_name):
         special_char_pattern = re.compile(r'[^\x00-\x7F]+')
         hash_pattern = re.compile(r'\s#\s')
@@ -65,7 +102,7 @@ class Preprocess:
     def remove_stop_words(df, column_name, new_col="text_tranformed", transformation=["tokenize", "lemma", "lower"], save_in="../data/transformed/train.lemma.csv"):
         nlp = stanza.Pipeline('en', processors='tokenize,mwt,pos,lemma', verbose=False)
         #stop_words = set(stanza.download('en', processors='tokenize,lemma')._lang.stop_words)
-        stop_words = ['.', ',', ';', ':', '-']
+        stop_words = ['', ',', ';', ':', '-']
 
         def process_text(value):
             if isinstance(value, str):
@@ -178,6 +215,10 @@ class Preprocess:
             tokens = re.findall(r'\b\w+\b', text)
             tags = ['O'] * len(tokens)
             i = 0
+
+            print(loc_dict)
+            print(tokens)
+
             while i < len(tokens):
                 token = tokens[i].lower()
                 if token in loc_dict:
@@ -198,6 +239,61 @@ class Preprocess:
         bio_df.to_csv(save_in, index=False)
         return bio_df
     
+    @staticmethod
+    def build_bio_encoding(df, text_col="text", save_in="../data/transformed/train.tag.csv"):
+        """
+        B-<type>: Beginning of an entity.
+        I-<type>: Inside an entity.
+        O: Outside any entity.
+        """
+        bio_data = []
+        for _, row in df.iterrows():
+            tweet_id = row['tweet_id']
+            text = row[text_col]
+            location_mentions = row['location_mentions']
+
+            # Split location mentions
+            if pd.notna(location_mentions):
+                locations = [loc.split('=>') for loc in location_mentions.split(' * ')]
+            else:
+                locations = []
+
+            # Create a dictionary of location mentions
+            loc_dict = {}
+            for loc in locations:
+                loc_name = loc[0].strip().lower()
+                loc_type = loc[1].strip().split(' ')[0]
+                loc_tokens = re.findall(r'\b\w+\b', loc_name)
+                loc_dict[tuple(loc_tokens)] = loc_type
+
+            tokens = re.findall(r'\b\w+\b', text)
+            tags = ['O'] * len(tokens)
+            i = 0
+
+            while i < len(tokens):
+                found_match = False
+                for length in range(len(tokens) - i, 0, -1):  # Check longer sequences first
+                    token_seq = tuple(tokens[i:i + length])
+                    token_seq_lower = tuple(map(str.lower, token_seq))
+                    if token_seq_lower in loc_dict:
+                        tag_type = loc_dict[token_seq_lower]
+                        tags[i] = 'B-' + tag_type
+                        if length > 1:
+                            for j in range(1, length):
+                                tags[i + j] = 'I-' + tag_type
+                        i += length
+                        found_match = True
+                        break
+                if not found_match:
+                    i += 1
+
+            for token, tag in zip(tokens, tags):
+                bio_data.append({'sentence_id': tweet_id, 'words': token, 'labels': tag})
+
+        bio_df = pd.DataFrame(bio_data)
+        bio_df.to_csv(save_in, index=False)
+        return bio_df
+
     @staticmethod
     def build_io_encoding(df, text_col="text", save_in="../data/transformed/train.tag.csv"):
         """

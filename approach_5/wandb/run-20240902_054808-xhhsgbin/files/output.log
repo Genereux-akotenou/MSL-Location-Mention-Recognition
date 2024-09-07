@@ -1,0 +1,7 @@
+/opt/anaconda3/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/opt/anaconda3/lib/python3.11/site-packages/transformers/models/t5/tokenization_t5.py:290: UserWarning: This sequence already has </s>. In future versions this behavior may lead to duplicated eos tokens being added.
+  warnings.warn(
+/opt/anaconda3/lib/python3.11/site-packages/transformers/models/t5/tokenization_t5.py:290: UserWarning: This sequence already has </s>. In future versions this behavior may lead to duplicated eos tokens being added.
+  warnings.warn(
+/opt/anaconda3/lib/python3.11/site-packages/transformers/models/t5/tokenization_t5.py:290: UserWarning: This sequence already has </s>. In future versions this behavior may lead to duplicated eos tokens being added.

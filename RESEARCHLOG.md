@@ -57,3 +57,4 @@ Explore the use of LLMs like LLaMA for the task of Location Mention Recognition.
 - https://arxiv.org/pdf/2310.11324
 - https://huggingface.co/docs/trl/sft_trainer
 - https://medium.com/@nk94.nitinkumar/fine-tuning-large-language-models-for-named-entity-recognition-da97c38df742
+- https://www.datacamp.com/tutorial/fine-tuning-llama-2

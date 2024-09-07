@@ -1,0 +1,60 @@
+2024-09-03 00:20:55,172 INFO    StreamThr :90436 [internal.py:wandb_internal():85] W&B internal server running at pid: 90436, started at: 2024-09-03 00:20:55.172077
+2024-09-03 00:20:55,173 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status
+2024-09-03 00:20:55,176 INFO    WriterThread:90436 [datastore.py:open_for_write():87] open: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240903_002055-ahgmxoyp/run-ahgmxoyp.wandb
+2024-09-03 00:20:55,177 DEBUG   SenderThread:90436 [sender.py:send():391] send: header
+2024-09-03 00:20:55,208 DEBUG   SenderThread:90436 [sender.py:send():391] send: run
+2024-09-03 00:20:55,619 INFO    SenderThread:90436 [dir_watcher.py:__init__():211] watching files in: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240903_002055-ahgmxoyp/files
+2024-09-03 00:20:55,619 INFO    SenderThread:90436 [sender.py:_start_run_threads():1200] run started: ahgmxoyp with start time 1725319255.172022
+2024-09-03 00:20:55,799 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:20:58,575 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:00,232 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-03 00:21:00,638 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:00,819 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:03,586 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:05,651 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:05,834 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:08,606 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:10,673 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:10,854 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:13,631 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:15,691 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:15,872 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:18,646 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:20,703 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:20,889 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:23,663 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:25,724 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:25,909 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:28,678 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:30,740 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:30,925 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:33,694 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:35,755 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:35,946 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:38,716 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:40,771 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:40,959 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:43,729 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:45,788 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:45,983 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:48,741 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:50,806 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:51,004 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:53,760 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:55,819 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:56,023 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:58,774 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:21:59,235 INFO    StreamThr :90436 [internal.py:wandb_internal():85] W&B internal server running at pid: 90436, started at: 2024-09-03 00:21:59.234753
+2024-09-03 00:21:59,235 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status
+2024-09-03 00:21:59,238 INFO    WriterThread:90436 [datastore.py:open_for_write():87] open: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240903_002159-evjiwiez/run-evjiwiez.wandb
+2024-09-03 00:21:59,239 DEBUG   SenderThread:90436 [sender.py:send():391] send: header
+2024-09-03 00:21:59,275 DEBUG   SenderThread:90436 [sender.py:send():391] send: run
+2024-09-03 00:21:59,690 INFO    SenderThread:90436 [dir_watcher.py:__init__():211] watching files in: /Users/genereux/Documents/OPENCORE/DATA_CTF/MSL-Location-Mention-Recognition/approach_5/wandb/run-20240903_002159-evjiwiez/files
+2024-09-03 00:21:59,690 INFO    SenderThread:90436 [sender.py:_start_run_threads():1200] run started: evjiwiez with start time 1725319319.234592
+2024-09-03 00:22:00,835 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:01,042 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:03,793 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:04,297 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-03 00:22:04,708 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:05,852 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 00:22:06,062 DEBUG   HandlerThread:90436 [handler.py:handle_request():158] handle_request: status_report

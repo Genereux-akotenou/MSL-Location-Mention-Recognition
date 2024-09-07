@@ -1,0 +1,6 @@
+TRAIN SHAPE:  (14392, 3)
+TEST  SHAPE:  (4066, 3)
+DEV   SHAPE:  (2056, 3)
+All PyTorch model weights were used when initializing TFT5Model.
+All the weights of TFT5Model were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFT5Model for predictions without further training.

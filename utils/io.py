@@ -146,8 +146,10 @@ class LMR_JSON_Scrapper:
             tweet_id = entry_dict.get('tweet_id', '')
             text = entry_dict.get('text', '')
             location_mentions = entry_dict.get('location_mentions', [])
-            locations = ' * '.join([f"{loc['text']}=>{loc['type'].split('/')[0].upper()}" for loc in location_mentions])
-            data.append({'tweet_id': 'ID_' + str(tweet_id), 'text': text, 'location_mentions': locations})
+            data.append({'tweet_id': 'ID_' + str(tweet_id), 'text': text, 'location_mentions': location_mentions})
+
+            #locations = ' * '.join([f"{loc['text']}=>{loc['type'].split('/')[0].upper()}" for loc in location_mentions])
+            #data.append({'tweet_id': 'ID_' + str(tweet_id), 'text': text, 'location_mentions': locations})
         
         df = pd.DataFrame(data)
         return df
